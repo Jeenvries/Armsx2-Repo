@@ -1,0 +1,77 @@
+name: Update Source
+
+on:
+  workflow_dispatch:
+    inputs:
+      include_prereleases:
+        description: "Include prerelease upstream releases"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-source
+  cancel-in-progress: false
+
+jobs:
+  update-source:
+    runs-on: ubuntu-latest
+
+    env:
+      ARMSX2_PUBLIC_BASE_URL: https://j1coding.github.io/Armsx2-Repo
+      INCLUDE_PRERELEASES: ${{ inputs.include_prereleases || 'false' }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SOURCE_UPDATE_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync latest upstream IPA
+        id: sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run sync:upstream
+
+      - name: Regenerate source files
+        if: steps.sync.outputs.changed == 'true'
+        run: npm run generate:source
+
+      - name: Validate generated source
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          npm run check:source
+          npm run validate:source
+
+      - name: Commit and push update
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          if git diff --quiet --exit-code; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add apps.json checksums.json public/ ipas/ assets/ index.html
+          git commit -m "Update ARMSX2 iOS source: ${{ steps.sync.outputs.version }}"
+          git push origin HEAD:${{ github.ref_name }}

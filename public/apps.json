@@ -1,0 +1,37 @@
+{
+  "name": "ARMSX2 iOS",
+  "identifier": "com.j1coding.armsx2.ios",
+  "sourceURL": "https://j1coding.github.io/Armsx2-Repo/apps.json",
+  "apps": [
+    {
+      "name": "ARMSX2 iOS",
+      "bundleIdentifier": "com.armsx2.ios",
+      "developerName": "ARMSX2",
+      "subtitle": "PlayStation 2 emulation, built for iOS.",
+      "localizedDescription": "ARMSX2 brings PlayStation 2 emulation to iOS with an ARM64-focused build, controller-friendly play, and local-network support for compatible titles.\n\nA JIT-capable setup is required. Performance and compatibility vary by device, iOS version, game, and sideloading environment. You must provide your own BIOS and game backups.",
+      "iconURL": "https://j1coding.github.io/Armsx2-Repo/assets/icon.png",
+      "screenshotURLs": [
+        "https://j1coding.github.io/Armsx2-Repo/assets/screenshots/01-library.png",
+        "https://j1coding.github.io/Armsx2-Repo/assets/screenshots/02-settings.png",
+        "https://j1coding.github.io/Armsx2-Repo/assets/screenshots/03-gameplay.png"
+      ],
+      "tintColor": "#2F6FAD",
+      "versions": [
+        {
+          "version": "1.2.2",
+          "date": "2026-06-01",
+          "localizedDescription": "Updated to ARMSX2 iOS 1.2.2.\n\nUpdated ARMSX2 iOS version display to 1.2.2.\nAdded battery percentage to the performance overlay.\nAdded device heat status to the performance overlay.\nAdded app RAM usage to the performance overlay.\nAdded Low Power Mode indicator when enabled.\nAdded color warnings for heat and low battery states.\nAdded new OSD/Overlay settings page.\nAdded OSD preset controls for Off, Simple, Detail, and Full.\nAdded OSD position setting.\nImproved performance overlay readability.",
+          "downloadURL": "https://j1coding.github.io/Armsx2-Repo/ipas/ARMSX2-iOSv1.2.2.ipa",
+          "size": 14005979,
+          "minOSVersion": "18.0"
+        }
+      ],
+      "permissions": [
+        {
+          "type": "network",
+          "usageDescription": "ARMSX2 uses local network access for PS2 online play through DEV9 sockets."
+        }
+      ]
+    }
+  ]
+}
