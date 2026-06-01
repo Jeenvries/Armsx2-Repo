@@ -94,9 +94,9 @@ const sourceApp = (ipaFileManifests, generatorOptions, metadataPayload, screensh
     name: "ARMSX2 iOS",
     bundleIdentifier,
     developerName: "ARMSX2",
-    subtitle: metadataPayload.app.subtitle ?? "PS2 emulation built for ARM64 iOS.",
+    subtitle: metadataPayload.app.subtitle ?? "Modern PlayStation 2 emulation for iOS.",
     localizedDescription: metadataPayload.app.localizedDescription
-      ?? "ARMSX2 brings PlayStation 2 emulation to iOS with an ARM64-focused build, controller-friendly play, and local-network support for compatible titles.",
+      ?? "ARMSX2 brings PlayStation 2 emulation to iOS devices. Based on the open-source PCSX2 project, this ARM64-focused iOS build helps you revisit and preserve your own legally obtained PS2 game library on modern mobile hardware.",
     iconURL: publicAssetUrl(generatorOptions.baseUrl, "assets/icon.png"),
     screenshotURLs: screenshotFiles.map((screenshotFile) => publicAssetUrl(generatorOptions.baseUrl, screenshotFile)),
     tintColor: "#2F6FAD",

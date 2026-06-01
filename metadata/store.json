@@ -1,7 +1,7 @@
 {
   "app": {
-    "subtitle": "PlayStation 2 emulation, built for iOS.",
-    "localizedDescription": "ARMSX2 brings PlayStation 2 emulation to iOS with an ARM64-focused build, controller-friendly play, and local-network support for compatible titles.\n\nA JIT-capable setup is required. Performance and compatibility vary by device, iOS version, game, and sideloading environment. You must provide your own BIOS and game backups."
+    "subtitle": "Modern PlayStation 2 emulation for iOS.",
+    "localizedDescription": "ARMSX2 brings PlayStation 2 emulation to iOS devices. Based on the open-source PCSX2 project, this ARM64-focused iOS build helps you revisit and preserve your own legally obtained PS2 game library on modern mobile hardware.\n\nFeatures:\n- Customizable touchscreen controls and external controller support\n- Graphics settings, performance options, save states, and memory card support\n- Local-network support for compatible online titles\n\nImportant iOS requirements:\nA JIT-capable setup is required for playable performance. Compatibility varies by device, iOS version, game, and sideloading environment, including LiveContainer, SideStore, or Feather.\n\nDisclaimer:\nARMSX2 does not include games or BIOS files. Users must provide their own legally obtained BIOS and game backups, such as ISO files. ARMSX2 is not affiliated with Sony Interactive Entertainment or PlayStation.\n\nCredits:\nThe upstream ARMSX2 project was founded by jpolo1224 and MoonPower, with work from contributors including Zeruth and Dib1998."
   },
   "screenshots": {
     "directory": "assets/screenshots"
