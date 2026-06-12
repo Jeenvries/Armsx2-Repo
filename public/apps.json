@@ -19,10 +19,10 @@
       "versions": [
         {
           "version": "2.2",
-          "date": "2026-06-11",
-          "localizedDescription": "Updated to ARMSX2 iOS 2.2.\n\nUpdated OSD/FPS branding to ARMSX2 iOS 2.2.\n\nFixed controller rumble.\n\nImproved the ARM64 EE recompiler: GPR cache expansion, const folding, cached loads/stores, branch-likely support, wait-loop handling, full-clamp FPU path, and unaligned load/store native paths. This should improve performance quite a bit. Thank you to @zeruth for assisting.\n\nARM64: Port x86 iFPUd full clamp mode (eeClampMode=3) for EE FPU, fixes NFS Carbon hang courtesy of @isztldav",
-          "downloadURL": "https://j1coding.github.io/Armsx2-Repo/ipas/ARMSX2-iOS-2.2.ipa",
-          "size": 13712651,
+          "date": "2026-06-12",
+          "localizedDescription": "Updated to ARMSX2 iOS 2.2.\n\nAdded in-game experimental Fast Forward controls to Quick Settings, this may increase device heat while using.\n\nAdded new on-screen controller skins and made White Colored the new default.\nPreserved the previous default controller skin as Legacy Refresh.\n\nAdded skin choices for Black, Black Colored, Black DS, Black White, Full White, White DS, White Full Color Button, Liquid Glass, and Xbox.\n\nAdded controller skin selection to Virtual Pad settings, layout editor, and in-game Quick Settings.\n\nThank you to Bagas on discord for creating the controller skins!",
+          "downloadURL": "https://j1coding.github.io/Armsx2-Repo/ipas/ARMSX2-iOS-2.2-rl2.ipa",
+          "size": 18682099,
           "minOSVersion": "18.0"
         }
       ],
