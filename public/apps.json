@@ -18,11 +18,11 @@
       "tintColor": "#2F6FAD",
       "versions": [
         {
-          "version": "2.2",
-          "date": "2026-06-12",
-          "localizedDescription": "Updated to ARMSX2 iOS 2.2.\n\nAdded in-game experimental Fast Forward controls to Quick Settings, this may increase device heat while using.\n\nAdded new on-screen controller skins and made White Colored the new default.\nPreserved the previous default controller skin as Legacy Refresh.\n\nAdded skin choices for Black, Black Colored, Black DS, Black White, Full White, White DS, White Full Color Button, Liquid Glass, and Xbox.\n\nAdded controller skin selection to Virtual Pad settings, layout editor, and in-game Quick Settings.\n\nThank you to Bagas on discord for creating the controller skins!",
-          "downloadURL": "https://j1coding.github.io/Armsx2-Repo/ipas/ARMSX2-iOS-2.2-rl2.ipa",
-          "size": 18682099,
+          "version": "2.2.1",
+          "date": "2026-06-13",
+          "localizedDescription": "Updated to ARMSX2 iOS 2.2.1.\n\nMidnight Club 3 Graphical Smoke issue in the garage fixed.\n\nFurther ARM64 EE Performance improvements.\n\nPotential fix for Silent Hill 2 graphical issues at the intro, (the flashlight bug still remains).\n\nBrought over from @isztldav work on the Mac Side:\n\nPorted ARM64 microVU fix for FTOI NaN-pattern handling.",
+          "downloadURL": "https://j1coding.github.io/Armsx2-Repo/ipas/ARMSX2-iOS-2.2.1.ipa",
+          "size": 18935664,
           "minOSVersion": "18.0"
         }
       ],
