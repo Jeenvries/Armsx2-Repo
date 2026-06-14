@@ -20,9 +20,9 @@
         {
           "version": "2.2.1",
           "date": "2026-06-13",
-          "localizedDescription": "Updated to ARMSX2 iOS 2.2.1.\n\nMidnight Club 3 Graphical Smoke issue in the garage fixed.\n\nFurther ARM64 EE Performance improvements.\n\nPotential fix for Silent Hill 2 graphical issues at the intro, (the flashlight bug still remains).\n\nBrought over from @isztldav work on the Mac Side:\n\nPorted ARM64 microVU fix for FTOI NaN-pattern handling.",
-          "downloadURL": "https://j1coding.github.io/Armsx2-Repo/ipas/ARMSX2-iOS-2.2.1.ipa",
-          "size": 18935664,
+          "localizedDescription": "Updated to ARMSX2 iOS 2.2.1.\n\nUpstream with PCSX2 where applicable:\n\nShared GS RT/DS sampling-hazard sample-area fix.\n\nGPU timing stats update fix.\n\nSPU2 volume / fast-forward volume safety guards.\n\nThank you to @isztldav",
+          "downloadURL": "https://j1coding.github.io/Armsx2-Repo/ipas/ARMSX2-iOS-2.2.1-rl3.ipa",
+          "size": 18934817,
           "minOSVersion": "18.0"
         }
       ],
